@@ -2,6 +2,8 @@ import Link from "next/link"
 import { Home, PenSquare, MessageSquare, Image, PenToolIcon as Tool } from 'lucide-react'
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
 import Feedback from "@/components/Feedback/Feedback"
+import { Button } from "../ui/button"
+import { AuthAndProfile } from "../AuthAndProfile/AuthAndProfile"
 
 export function MainSidebar() {
     return (
@@ -64,12 +66,7 @@ export function MainSidebar() {
                 </SidebarGroup>
             </SidebarContent>
             <div className="mt-auto border-t p-4">
-                <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 rounded-full bg-gray-200" />
-                    <div className="flex-1">
-                        <div className="font-medium">Muhammad Kaif</div>
-                    </div>
-                </div>
+                <AuthAndProfile />
             </div>
         </Sidebar>
     )
