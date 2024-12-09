@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { SidebarTrigger } from "@/components/ui/sidebar"
-import { Layers } from "lucide-react"
+import { Github, Layers } from "lucide-react"
 import { ThemeToggler } from "../ThemeToggler/ThemeToggler"
+import Link from "next/link"
 
 export function Navbar() {
     return (
@@ -12,11 +13,13 @@ export function Navbar() {
                     <Layers className="size-5" />
                     <span className="text-lg font-bold">Orbital Dev Tools</span>
                 </div>
-            </div>     
+            </div>
 
             <div className="flex items-center gap-2">
                 <ThemeToggler />
-                <Button>Upgrade</Button>
+                <Link href={'#'}>
+                    <Button><Github className="size-4" /> Github</Button>
+                </Link>
             </div>
         </header>
     )

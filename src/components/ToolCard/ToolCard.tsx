@@ -18,7 +18,7 @@ export function ToolCard({
 }: ToolCardProps) {
     return (
         <Link href={href}>
-            <Card className="overflow-hidden hover:shadow-xl transition duration-300">
+            <Card className="overflow-hidden hover:shadow-xl transition duration-300 bg-background">
                 <div className={cn("aspect-video p-4 rounded-b-xl bg-gradient-to-br from-blue-500 to-blue-600")}>
                     <p className="text-2xl font-bold text-white w-[90%] line-clamp-2">
                         {title}

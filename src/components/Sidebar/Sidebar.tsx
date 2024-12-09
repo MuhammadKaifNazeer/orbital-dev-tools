@@ -1,18 +1,15 @@
 import Link from "next/link"
-import { Home, PenSquare, MessageSquare, Image, PenToolIcon as Tool, ChevronRight } from 'lucide-react'
+import { Home, PenSquare, MessageSquare, Image, PenToolIcon as Tool, ChevronRight, Layers, Github, Rocket, Smile } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
 
 export function MainSidebar() {
     return (
         <Sidebar>
-            <SidebarHeader>
-                <div className="p-4">
-                    <Button variant="outline" className="w-full justify-start gap-2">
-                        <span className="text-[#7C3AED]">+</span> Create New
-                        <ChevronRight className="ml-auto h-4 w-4" />
-                    </Button>
-                </div>
+            <SidebarHeader className="border-b h-14">
+                <Link href={'#'}>
+                    <Button variant={'outline'} className="w-full"><Smile className="size-4" /> Feedback</Button>
+                </Link>
             </SidebarHeader>
             <SidebarContent>
                 <SidebarGroup>
@@ -72,7 +69,7 @@ export function MainSidebar() {
                 <div className="flex items-center gap-2">
                     <div className="h-8 w-8 rounded-full bg-gray-200" />
                     <div className="flex-1">
-                        <div className="font-medium">Muhammad K</div>
+                        <div className="font-medium">Muhammad Kaif</div>
                     </div>
                 </div>
             </div>
