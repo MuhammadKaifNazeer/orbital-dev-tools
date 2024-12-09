@@ -1,15 +1,13 @@
 import Link from "next/link"
-import { Home, PenSquare, MessageSquare, Image, PenToolIcon as Tool, ChevronRight, Layers, Github, Rocket, Smile } from 'lucide-react'
-import { Button } from "@/components/ui/button"
+import { Home, PenSquare, MessageSquare, Image, PenToolIcon as Tool } from 'lucide-react'
 import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar"
+import Feedback from "@/components/Feedback/Feedback"
 
 export function MainSidebar() {
     return (
         <Sidebar>
             <SidebarHeader className="border-b h-14">
-                <Link href={'#'}>
-                    <Button variant={'outline'} className="w-full"><Smile className="size-4" /> Feedback</Button>
-                </Link>
+                <Feedback />
             </SidebarHeader>
             <SidebarContent>
                 <SidebarGroup>
