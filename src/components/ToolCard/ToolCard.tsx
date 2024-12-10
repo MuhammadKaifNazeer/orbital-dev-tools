@@ -25,10 +25,19 @@ export function ToolCard({
                     </p>
                 </div>
                 <div className="flex flex-col px-4 pt-2 pb-3">
-                    <p className="text-lg font-semibold text-neutral-800 mb-2.5 line-clamp-1"></p>
                     <p className="text-sm font-medium line-clamp-3 text-muted-foreground md:text-lg h-[76px] -tracking-[0.51px] !leading-6">
                         {description}
                     </p>
+                </div>
+                <div className='bg-muted dark:bg-muted/35 h-max w-full flex items-center justify-start gap-1.5 p-4'>
+                    <Image
+                        src={'https://avatars.githubusercontent.com/u/122388541?v=4'}
+                        alt="creator image"
+                        width={50}
+                        height={50}
+                        className='h-4 w-4 aspect-square rounded-full'
+                    />
+                    <span className='text-[12px] text-muted-foreground line-clamp-1'>Muhammad Kaif Nazeer</span>
                 </div>
             </Card>
         </Link>
